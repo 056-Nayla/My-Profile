@@ -1,232 +1,245 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-<title>My Profile - Nayla</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile - Nayla</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-<style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #fff6fa, #ffeef5);
+      color: #444;
+    }
 
-body{
-    margin:0;
-    font-family:Arial, sans-serif;
-    background:#fff0f5;
-    color:#444;
-}
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 30px auto;
+    }
 
-.container{
-    max-width:900px;
-    margin:auto;
-    padding:20px;
-}
+    .card {
+      background: #ffffff;
+      border-radius: 25px;
+      padding: 30px;
+      margin-bottom: 25px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
 
-.card{
-    background:white;
-    padding:25px;
-    margin:20px 0;
-    border-radius:25px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
-}
+    .hero {
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, #fff, #ffe4ef);
+    }
 
+    .hero::before {
+      content: "🧸";
+      position: absolute;
+      top: 20px;
+      left: 25px;
+      font-size: 40px;
+      opacity: 0.25;
+    }
 
-.profile{
-    text-align:center;
-}
+    .hero::after {
+      content: "🧸";
+      position: absolute;
+      bottom: 20px;
+      right: 25px;
+      font-size: 45px;
+      opacity: 0.25;
+    }
 
-.profile img{
-    width:150px;
-    height:150px;
-    border-radius:50%;
-    border:5px solid #ff9ec4;
-}
+    .profile-img {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 6px solid #ffb6cf;
+      box-shadow: 0 6px 15px rgba(255, 105, 180, 0.25);
+      margin-bottom: 20px;
+    }
 
+    h1 {
+      color: #e75480;
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
 
-h1{
-    color:#e75480;
-}
+    .subtitle {
+      font-size: 20px;
+      color: #666;
+      margin-bottom: 10px;
+    }
 
+    .badge {
+      display: inline-block;
+      background: #ffd9e8;
+      color: #d94f8a;
+      padding: 8px 16px;
+      border-radius: 20px;
+      margin: 6px;
+      font-size: 14px;
+      font-weight: bold;
+    }
 
-h2{
-    color:#d94f8a;
-}
+    h2 {
+      color: #d94f8a;
+      margin-bottom: 15px;
+      font-size: 28px;
+    }
 
+    p {
+      line-height: 1.8;
+      font-size: 17px;
+    }
 
-.badge{
-    display:inline-block;
-    background:#ffd6e7;
-    padding:8px 15px;
-    border-radius:20px;
-    margin:5px;
-}
+    ul {
+      margin-left: 20px;
+      line-height: 1.9;
+      font-size: 17px;
+    }
 
+    .info-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
 
-table{
-    width:100%;
-}
+    .info-table td {
+      padding: 12px 8px;
+      border-bottom: 1px solid #f3d6e1;
+      font-size: 17px;
+    }
 
+    .info-table td:first-child {
+      width: 180px;
+      font-weight: bold;
+      color: #d94f8a;
+    }
 
-a{
-    color:#e75480;
-}
+    .hobby-box {
+      display: inline-block;
+      background: #fff0f6;
+      border: 2px dashed #ffb6cf;
+      padding: 12px 18px;
+      border-radius: 18px;
+      margin-top: 10px;
+      font-size: 18px;
+      color: #d94f8a;
+      font-weight: bold;
+    }
 
+    .footer {
+      text-align: center;
+      color: #999;
+      padding: 20px;
+      font-size: 14px;
+    }
 
-footer{
-    text-align:center;
-    padding:20px;
-}
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 28px;
+      }
 
+      .profile-img {
+        width: 140px;
+        height: 140px;
+      }
 
-@media(max-width:600px){
-
-.card{
-    padding:15px;
-}
-
-}
-
-
-</style>
-
+      .info-table td:first-child {
+        width: 120px;
+      }
+    }
+  </style>
 </head>
-
-
 <body>
 
-
-<div class="container">
-
-
-<div class="card profile">
-
-<img src="img-250406174907809.jpg">
-
-<h1>
-🧸 Nayla Firdauziyah Rahman
-</h1>
-
-<p>
-2024520056
-</p>
-
-<p>
-Mahasiswa Teknik Informatika
-</p>
-
-
-</div>
-
-
-
-<div class="card">
-
-<h2>🧸 Motivasi Hidup</h2>
-
-<p>
-Saya ingin terus belajar dan mengembangkan kemampuan teknologi
-agar dapat menciptakan karya digital yang bermanfaat.
-</p>
-
-</div>
-
-
-
-
-<div class="card">
-
-<h2>🎀 Kemampuan Teknologi</h2>
-
-<span class="badge">
-HTML/CSS - Menengah
-</span>
-
-<span class="badge">
-JavaScript - Pemula
-</span>
-
-<span class="badge">
-Git - Pemula
-</span>
-
-<span class="badge">
-Flutter - Dipelajari
-</span>
-
-
-</div>
-
-
-
-
-
-<div class="card">
-
-<h2>🌸 Proyek Yang Telah Dibuat</h2>
-
-<h3>
-My Profile Website
-</h3>
-
-<p>
-Website biodata pribadi pertama yang dibuat menggunakan HTML dan CSS
-sebagai portofolio digital mahasiswa.
-</p>
-
-
-</div>
-
-
-
-
-<div class="card">
-
-<h2>📚 Riwayat Pendidikan</h2>
-
-
-<table>
-
-<tr>
-<td>
-2024 - Sekarang
-</td>
-
-<td>
-Teknik Informatika
-</td>
-
-</tr>
-
-
-</table>
-
-
-</div>
-
-
-
-
-<div class="card">
-
-<h2>💗 Tema Tampilan</h2>
-
-<p>
-Tema yang digunakan adalah Boneka dengan konsep cute minimalist.
-Pemilihan warna pastel menggambarkan kesan kreatif, ramah,
-dan nyaman dilihat.
-</p>
-
-
-</div>
-
-
-
-<footer>
-
-Dibuat dengan ♥️ oleh 056-Nayla —
-P1 Pemrograman Platform
-
-</footer>
-
-
-</div>
-
+  <div class="container">
+
+    <!-- BAGIAN ATAS / HERO -->
+    <div class="card hero">
+      <img src="img-250406174907809.jpg" alt="Foto Nayla" class="profile-img">
+      <h1>🧸 Nayla Firdauziyah Rahman</h1>
+      <p class="subtitle">Mahasiswa Teknik Informatika</p>
+      <span class="badge">NIM: 2024520056</span>
+      <span class="badge">💖 Suka Boneka</span>
+      <span class="badge">🌸 Soft Pink Theme</span>
+    </div>
+
+    <!-- BIODATA -->
+    <div class="card">
+      <h2>🧸 Biodata Mahasiswa</h2>
+      <table class="info-table">
+        <tr>
+          <td>Nama</td>
+          <td>Nayla Firdauziyah Rahman</td>
+        </tr>
+        <tr>
+          <td>NIM</td>
+          <td>2024520056</td>
+        </tr>
+        <tr>
+          <td>Jurusan</td>
+          <td>Teknik Informatika</td>
+        </tr>
+        <tr>
+          <td>Hobi</td>
+          <td>Boneka</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- TENTANG SAYA -->
+    <div class="card">
+      <h2>💗 Tentang Saya</h2>
+      <p>
+        Halo, saya <b>Nayla Firdauziyah Rahman</b>, mahasiswa Teknik Informatika
+        yang sedang belajar tentang pengembangan web, desain tampilan website,
+        dan teknologi digital. Saya suka hal-hal yang lucu dan estetik,
+        terutama tema <b>boneka</b> dan warna-warna lembut seperti pink.
+      </p>
+    </div>
+
+    <!-- HOBI -->
+    <div class="card">
+      <h2>🧸 Hobi Favorit</h2>
+      <p>Saya sangat menyukai boneka karena lucu, menggemaskan, dan memberi kesan nyaman.</p>
+      <div class="hobby-box">🧸 Boneka Lucu adalah favorit saya 🧸</div>
+    </div>
+
+    <!-- KEMAMPUAN -->
+    <div class="card">
+      <h2>💻 Kemampuan Teknologi</h2>
+      <ul>
+        <li>HTML / CSS (Pemula - Menengah)</li>
+        <li>JavaScript (Pemula)</li>
+        <li>Git & GitHub (Pemula)</li>
+        <li>Desain tampilan web sederhana</li>
+      </ul>
+    </div>
+
+    <!-- MOTIVASI -->
+    <div class="card">
+      <h2>🌷 Motivasi Hidup</h2>
+      <p>
+        Saya ingin terus belajar dan mengembangkan kemampuan teknologi
+        agar bisa menciptakan karya digital yang bermanfaat, menarik,
+        dan membanggakan.
+      </p>
+    </div>
+
+    <div class="footer">
+      © 2026 - My Profile | Dibuat oleh Nayla Firdauziyah Rahman 🧸
+    </div>
+
+  </div>
 
 </body>
 </html>
