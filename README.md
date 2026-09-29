@@ -4,7 +4,7 @@
 
 **Nama:** Nayla Firdauziyah
 
-**NIM:** (isi NIM kamu)
+**NIM:** 2024520056
 
 **Jurusan:** Teknik Informatika
 
